@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "modlearning:zircon_ore",
+    "modlearning:zircon_block",
+    "modlearning:deepslate_zircon_ore"
+  ]
+}

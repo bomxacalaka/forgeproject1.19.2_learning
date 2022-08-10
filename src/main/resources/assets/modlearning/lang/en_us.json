@@ -1,0 +1,14 @@
+{
+  "item.modlearning.zircon" : "Zircon",
+  "item.modlearning.raw_zircon" : "Raw Zircon",
+  "item.modlearning.isac" : "ISACUS",
+  "item.modlearning.potion" : "potion",
+
+  "itemGroup.tutorialtab" : "Zircon Tutorial Tab 2",
+
+  "block.modlearning.zircon_block" : "Zircon Block",
+  "block.modlearning.zircon_ore" : "Zircon Ore",
+  "block.modlearning.deepslate_zircon_ore" : "Deepslate Zircon Ore",
+  "block.modlearning.netherrack_zircon_ore" : "Netherrack Zircon Ore",
+  "block.modlearning.enderstone_zircon_ore" : "Enderstone Zircon Ore"
+}
