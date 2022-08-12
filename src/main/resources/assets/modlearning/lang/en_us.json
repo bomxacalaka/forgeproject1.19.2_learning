@@ -3,6 +3,8 @@
   "item.modlearning.raw_zircon" : "Raw Zircon",
   "item.modlearning.isac" : "ISACUS",
   "item.modlearning.potion" : "potion",
+  "item.modlearning.blueberry": "Blueberry",
+  "item.modlearning.blueberry_seeds": "Blueberry Seeds",
 
   "itemGroup.tutorialtab" : "Zircon Tutorial Tab 2",
 
@@ -10,5 +12,11 @@
   "block.modlearning.zircon_ore" : "Zircon Ore",
   "block.modlearning.deepslate_zircon_ore" : "Deepslate Zircon Ore",
   "block.modlearning.netherrack_zircon_ore" : "Netherrack Zircon Ore",
-  "block.modlearning.enderstone_zircon_ore" : "Enderstone Zircon Ore"
+  "block.modlearning.enderstone_zircon_ore" : "Enderstone Zircon Ore",
+  "block.modlearning.jumpy_block": "Jumpy Block",
+  "block.modlearning.zircon_lamp": "Zircon Lamp",
+  "block.modlearning.blueberry_crop": "Blueberry Crop",
+
+  "item.modlearning.eight_ball": "Eight Ball"
+
 }
