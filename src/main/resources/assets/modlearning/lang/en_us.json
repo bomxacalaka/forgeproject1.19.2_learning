@@ -17,6 +17,9 @@
   "block.modlearning.zircon_lamp": "Zircon Lamp",
   "block.modlearning.blueberry_crop": "Blueberry Crop",
 
-  "item.modlearning.eight_ball": "Eight Ball"
+  "item.modlearning.eight_ball": "Eight Ball",
+  "entity.minecraft.villager.modlearning.jumpy_master": "Jumpy Master",
 
+  "key.category.tutorialmod.tutorial": "Tutorial Mod",
+  "key.tutorialmod.drink_water": "Drink Water"
 }

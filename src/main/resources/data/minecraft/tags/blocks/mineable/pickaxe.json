@@ -3,6 +3,8 @@
   "values": [
     "modlearning:zircon_ore",
     "modlearning:zircon_block",
+    "modlearning:enderstone_zircon_ore",
+    "modlearning:netherrack_zircon_ore",
     "modlearning:deepslate_zircon_ore"
   ]
 }

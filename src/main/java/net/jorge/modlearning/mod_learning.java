@@ -1,10 +1,13 @@
 package net.jorge.modlearning;
 
+
 import com.mojang.logging.LogUtils;
 import net.jorge.modlearning.block.ModBlocks;
 import net.jorge.modlearning.item.ModItems;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
-import net.minecraft.client.renderer.RenderType;
+import net.jorge.modlearning.painting.ModPaintings;
+import net.jorge.modlearning.villager.ModVillagers;
+import net.jorge.modlearning.world.feature.ModConfiguredFeatures;
+import net.jorge.modlearning.world.feature.ModPlacedFeatures;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -14,6 +17,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+
 
 //testing git
 
@@ -34,14 +38,23 @@ public class mod_learning
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
-        modEventBus.addListener(this::commonSetup);
+        ModVillagers.register(modEventBus);
 
+        ModPaintings.register(modEventBus);
+
+        ModConfiguredFeatures.register(modEventBus);
+        ModPlacedFeatures.register(modEventBus);
+
+
+        modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-
+        event.enqueueWork(() -> {
+            ModVillagers.registerPOIs();
+        });
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
@@ -62,4 +75,6 @@ public class mod_learning
 
         }
     }
+
+
 }
