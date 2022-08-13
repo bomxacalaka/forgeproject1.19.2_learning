@@ -1,6 +1,8 @@
 package net.jorge.modlearning.event;
 
 import net.jorge.modlearning.mod_learning;
+import net.jorge.modlearning.networking.ModMessages;
+import net.jorge.modlearning.networking.packet.DrinkWaterC2SPacket;
 import net.jorge.modlearning.util.KeyBinding;
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.chat.Component;
@@ -16,7 +18,8 @@ public class ClientEvents {
         @SubscribeEvent
         public static void onKeyInput(InputEvent.Key event) {
             if(KeyBinding.DRINKING_KEY.consumeClick()) {
-                Minecraft.getInstance().player.sendSystemMessage(Component.literal("Pressed a Key!"));
+                //Minecraft.getInstance().player.sendSystemMessage(Component.literal("Pressed a Key!"));
+                ModMessages.sendToServer(new DrinkWaterC2SPacket());
             }
         }
     }

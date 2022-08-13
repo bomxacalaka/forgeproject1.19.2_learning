@@ -20,6 +20,9 @@
   "item.modlearning.eight_ball": "Eight Ball",
   "entity.minecraft.villager.modlearning.jumpy_master": "Jumpy Master",
 
-  "key.category.tutorialmod.tutorial": "Tutorial Mod",
-  "key.tutorialmod.drink_water": "Drink Water"
+  "key.category.modlearning.tutorial": "Tutorial Mod",
+  "key.modlearning.drink_water": "Drink Water",
+
+  "message.modlearning.drink_water": "Drinking Water",
+  "message.modlearning.no_water": "No water nearby!"
 }

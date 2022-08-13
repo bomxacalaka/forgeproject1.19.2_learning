@@ -4,6 +4,7 @@ package net.jorge.modlearning;
 import com.mojang.logging.LogUtils;
 import net.jorge.modlearning.block.ModBlocks;
 import net.jorge.modlearning.item.ModItems;
+import net.jorge.modlearning.networking.ModMessages;
 import net.jorge.modlearning.painting.ModPaintings;
 import net.jorge.modlearning.villager.ModVillagers;
 import net.jorge.modlearning.world.feature.ModConfiguredFeatures;
@@ -47,6 +48,7 @@ public class mod_learning
 
 
         modEventBus.addListener(this::commonSetup);
+
         MinecraftForge.EVENT_BUS.register(this);
     }
 
@@ -55,6 +57,7 @@ public class mod_learning
         event.enqueueWork(() -> {
             ModVillagers.registerPOIs();
         });
+        ModMessages.register();
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
